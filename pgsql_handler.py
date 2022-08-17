@@ -10,7 +10,6 @@ TEST_URL = "postgres://postgres:password@192.168.50.1:5432/database"
 
 """
 postgresql::/[user:pass@][hostspec][/dbname][?paramspec]
-psql -U 'postgres' -h '192.168.50.1' -d 'hmb' -c 
 """
 
 
