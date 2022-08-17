@@ -89,8 +89,8 @@ class PostgresHandler(Handler):
 
 if __name__ == "__main__":
     # Set up the logger
-    logger = logging.getLogger("hmb2_log")
-    logger.addHandler(PostgresHandler(schema="hmb_data", table="system_logs", url=TEST_URL))
+    logger = logging.getLogger("testlog")
+    logger.addHandler(PostgresHandler(schema="schema", table="system_logs", url=TEST_URL))
     f_format = logging.FileHandler("local.log")
     f_format.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
     logger.addHandler(f_format)
